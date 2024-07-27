@@ -11,4 +11,4 @@ Welcome to MagiGame! This little magician themed website is developed for learni
 - CSS
 
 ## License
-[MIT License]()
+[MIT License](https://github.com/WeiJian123-tech/MagiGame/blob/main/LICENSE)
