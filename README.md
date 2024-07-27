@@ -1,39 +1,14 @@
-# magigame
+# Magigame
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome to MagiGame! This little magician themed website is developed for learning how to create websites with Vue.js. In this website, the user can play a hidden object game and magician-themed trivia.
 
-## Recommended IDE Setup
+## Technologies
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue.js
+- TailwindCSS
+- JavaScript
+- HTML
+- CSS
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-MagiGame
-# MagiGame
-# MagiGame
-# MagiGame
+## License
+[MIT License]()
