@@ -1,5 +1,9 @@
+<script setup>
+import TriviaContent from '@/components/TriviaContent.vue';
+</script>
+
 <template>
-    <div class="trivia">
-        <h1>This is an about page</h1>
-    </div>
+    <main>
+        <TriviaContent />
+    </main>
 </template>

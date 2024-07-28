@@ -1,5 +1,6 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+//import TheWelcome from '../components/TheWelcome.vue'
+import HomeContent from '@/components/HomeContent.vue';
 </script>
 
 <template>
@@ -7,6 +8,6 @@ import TheWelcome from '../components/TheWelcome.vue'
     <!--
     <TheWelcome />
     -->
-    <h1>This is a homepage.</h1>
+    <HomeContent />
   </main>
 </template>

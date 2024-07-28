@@ -1,5 +1,9 @@
+<script setup>
+import GameContent from '@/components/GameContent.vue';
+</script>
+
 <template>
-    <div class="game">
-        <h1>This is a game page</h1>
-    </div>
+    <main>
+        <GameContent />
+    </main>
 </template>
