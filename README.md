@@ -33,7 +33,7 @@ Welcome to MagiGame! This little magician themed website is developed for learni
 
 ### LORE???
 
-- maybe ARG
+- Possible horror style ARG (optional but unlikely to come to fruition)
 
 ## License
 [MIT License](https://github.com/WeiJian123-tech/MagiGame/blob/main/LICENSE)
