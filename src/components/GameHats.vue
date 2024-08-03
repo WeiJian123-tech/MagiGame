@@ -27,6 +27,7 @@ async function revealHat(event) {
         console.log("hat: " + hat.value);
     }
 
+    //Produces a warning wanting await. Don't know how to fix it.
     onMounted(async () => {
         hat.value.click();
     });
