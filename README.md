@@ -10,30 +10,11 @@ Welcome to MagiGame! This little magician themed website is developed for learni
 - HTML
 - CSS
 
-## Roadmap / Wepage Ideas
+## Trivia Page 
+Unfortunately, the trivia page is discontinued. I had difficulties in creating this page due to lack of knowledge, experience, and time. I apologize to all who look forward to the trivia page.
 
-### Homepage
-
-- Description of website
-- Images
-
-### First page
-
-- Full of magician top hats
-- Random amount of top hats every reload
-- One top hat has a rabbit inside
-- Displays a win screen once user has found that rabbit
-
-### Second page
-
-- Magician Questionnaire
-- Random question about magicians
-- Answers via multiple choice with radio buttons
-- Win screen displays score
-
-### LORE???
-
-- Possible horror style ARG (optional but unlikely to come to fruition)
+## Warnings & Developers
+There is a warning that will occur with you inspect the game section of Magigame and view the console.
 
 ## License
 [MIT License](https://github.com/WeiJian123-tech/MagiGame/blob/main/LICENSE)
