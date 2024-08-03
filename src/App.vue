@@ -20,34 +20,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <RouterView />
 
-<!--
-  <nav class="flex flex-row justify-start bg-cyan-200 text-3xl">
-    <a href="/" class="text-slate-800 hover:text-neutral-950 hover:underline mx-5">Home</a>
-    <a href="/game" class="text-slate-800 hover:text-neutral-950 hover:underline mx-5">Game</a>
-    <a href="/trivia" class="text-slate-800 hover:text-neutral-950 hover:underline mx-5">Trivia</a>
-  </nav>
-
-  <div>
-    <h1 class="font-bold text-6xl text-center text-slate-200 py-5">Welcome to MagiGame!</h1>
-    <div>
-      <img src="./assets/magician.jpg" alt="A magician in a restaurant with a wand pointing his free hand to the camera." class="w-96 h-auto py-1 m-auto">
-
-      <p class="w-full h-auto bg-black text-center">
-        Photo by
-        <a href="https://unsplash.com/@kouchpeydeh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="hover:bg-neutral-300/75">
-          Khashayar Kouchpeydeh
-        </a> on <a href="https://unsplash.com/photos/man-in-black-jacket-playing-guitar-5yVmZ-OqhF4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="hover:bg-neutral-300/75">
-          Unsplash
-        </a>
-      </p>
-
-    </div>
-    <p class="text-wrap text-center align-middle break-words pt-2">
-      Come one! Come all! Gather around to this little yet <span class="italic">enchanting</span> website for magician enthusiasts.
-      Play a hidden object game! Wrinkle your brain with a small magician trivia. May you feel a bit of magic coursing through your hands with each click!
-    </p>
-  </div>
--->
 </template>
 
 <!--

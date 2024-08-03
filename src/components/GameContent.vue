@@ -1,34 +1,38 @@
 <script setup>
 import Title from './Title.vue'
-import topHat from '../assets/magician_top_hat.png'
-import liftedTopHat from '../assets/lifted_top_hat.png'
-import rabbit from '../assets/top_hat_with_rabbit.png'
+import GameHats from './GameHats.vue'
+
+/*
+ * Special thanks to these sources which helped me build this game:
+ *
+ * This StackOverflow answer by mrrrk(https://stackoverflow.com/users/155791/mrrrk):
+ * https://stackoverflow.com/a/61403621
+ * asked by user3348410(https://stackoverflow.com/users/3348410/user3348410):
+ * https://stackoverflow.com/q/53737648
+ *
+ * Brave AI for how to make an image clickable: https://search.brave.com/search?q=How+to+make+an+image+clickable+vue
+ *
+ * Mozilla JavaScript Documentation for how to generate random numbers: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+ */
 
 function startGame() {
 
-    const hiddenRabbit = document.createElement('img');
-    hiddenRabbit.src = rabbit;
-    hiddenRabbit.alt = 'A rabbit revealed hidden under a top hat';
+    const gameContainer = document.getElementById('game');
+    gameContainer.setAttribute('class', 'grid grid-cols-4 gap-4');
 
-    const rabbitLocation = Math.floor(Math.random() * 16) + 1;
-    console.log(rabbitLocation);
-
-    let topHatLocation = document.getElementById(rabbitLocation);
-
-    topHatLocation.replaceChild(hiddenRabbit, topHatLocation.firstChild); //May replace images with buttons
-
-    //https://search.brave.com/search?q=How+to+make+an+image+clickable+vue
 }
-
 function resetGame() {
+    const gameContainer = document.getElementById('game');
+    gameContainer.setAttribute('class', 'hidden');
 
+    window.location.reload();
 }
 
 </script>
 
 <template>
     <Title #titleText>
-        Find the Rabbit!
+        Find Rabbit!
     </Title>
 
     <div class="flex flex-row justify-center align-middle">
@@ -37,59 +41,33 @@ function resetGame() {
         </button>
 
         <button type="button" v-on:click="resetGame()" class="bg-slate-400 mx-2 p-5 border-2 border-black rounded hover:bg-slate-300">
-            Reset
+            Reset/Reload
         </button>
     </div>
 
-    <div id="game" class="grid grid-cols-4 gap-4">
-        <div class="imgCont" id="1">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="2">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="3">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="4">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="5">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="6">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="7">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="8">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="9">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="10">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="11">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="12">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="13">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="14">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="15">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
-        <div class="imgCont" id="16">
-            <img :src="topHat" alt="Image of a magician top hat" class="hover:cursor-pointer hover:max-w-[110%]"/>
-        </div>
+    <div>
+        <p class="font-serif text-base text-center py-5">
+            Find a rabbit to win this game. Click on each top hat to see if a rabbit is hidden underneath it. You have a 5% chance of finding a rabbit. Good luck!
+        </p>
+    </div>
+
+    <div id="game" class="hidden">
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
+        <GameHats />
     </div>
 
 </template>

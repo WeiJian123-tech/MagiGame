@@ -6,4 +6,8 @@ import Title from './Title.vue';
     <Title #titleText>
         Trivia
     </Title>
+
+    <div>
+
+    </div>
 </template>
